@@ -1,4 +1,21 @@
-footer {
+.touch {
+  display: flex;
+  justify-content: center;
+  animation-name: scaletouch;
+}
+
+@keyframes scaletouch {
+  from {
+    transform: rotate(90deg) scale(0.5);
+  }
+
+  to {
+    transform: rotate(90deg) scale(1);
+  }
+}
+
+.logo {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 100px;
 }
