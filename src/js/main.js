@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
       case 0: // Retour 2 terminé → on recommence : Jaune pour Aller 1
         circle.style.background = "#fd0"; // Jaune
         titre1.textContent = "Envie de";
-        titre2.textContent = "Culture";
+        titre2.textContent = "Culture ?";
         break;
       case 1: // Aller 1 terminé → Retour 1
         circle.style.background = "#25FFA4"; // Vert
         break;
       case 2: // Retour 1 terminé → Aller 2
         titre1.textContent = "Lust auf";
-        titre2.textContent = "Kultur";
+        titre2.textContent = "Kultur ?";
         circle.style.background = "#00B2FF"; // Bleu
         break;
       case 3: // Aller 2 terminé → Retour 2

@@ -1,31 +1,41 @@
 .circle {
   width: 1080px;
   height: 1080px;
-  transform: rotate(90deg);
+  transform: rotate(90deg) scale(1); /* Ajout de scale ici */
   flex-shrink: 0;
   aspect-ratio: 1/1;
   border-radius: 1080px;
   background: #fd0;
   filter: blur(100px);
 
-  animation-name: changeWidth;
+  animation-name: scaleCircle;
   animation-duration: 4s;
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
-  animation-direction: alternate; /* ✅ ajout important */
-  transition: background 2.5s ease; /* ✅ dégradé fluide entre les couleurs */
+  animation-direction: alternate;
+  transition: background 2.5s ease;
+  z-index: 1;
+  position: relative;
 }
 
-@keyframes changeWidth {
+@keyframes scaleCircle {
   from {
-    width: 50%;
+    transform: rotate(90deg) scale(0.5);
   }
 
   to {
-    width: 100%;
+    transform: rotate(90deg) scale(1);
   }
 }
 
 #title1 {
   transition: color 0.5s, opacity 0.5s;
+}
+
+.circlecontainer {
+  inset: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
