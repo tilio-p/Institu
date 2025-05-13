@@ -2,15 +2,19 @@
   display: flex;
   justify-content: center;
   animation-name: scaletouch;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes scaletouch {
   from {
-    transform: rotate(90deg) scale(0.5);
+    transform: scale(0.5);
   }
 
   to {
-    transform: rotate(90deg) scale(1);
+    transform: scale(1);
   }
 }
 
