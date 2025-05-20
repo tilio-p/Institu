@@ -11,10 +11,27 @@
   margin-right: 20%;
   z-index: 2;
   margin-bottom: 100px;
+  position: relative;
+  &.is-active {
+    opacity: 0;
+  }
 }
 
 .blackbanner {
   border-radius: 20px;
   background: #000;
   padding: 20px auto;
+}
+
+// img#image {
+//   display: block;
+//   opacity: 1;
+//   transition: opacity 0.3s ease-in-out;
+// }
+
+.second {
+  position: absolute;
+  top: 557px;
+  left: 125px;
+  width: 648px;
 }
