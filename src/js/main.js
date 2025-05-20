@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     cards[step].classList.add("is-active");
-    step = (step + 1) % 4;
+    step = (step + 1) % cards.length;
 
     switch (step) {
       case 0: // Retour 2 terminé → on recommence : Jaune pour Aller 1
